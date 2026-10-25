@@ -1,0 +1,46 @@
+# ==========================================
+# Pliki binarne i artefakty kompilacji
+# ==========================================
+*.out
+*.exe
+*.o
+*.obj
+*.so
+*.dylib
+*.a
+
+# Domyślny plik wyjściowy kompilatora g++ / clang
+a.out
+
+# ==========================================
+# Systemy budowania (Build directories)
+# ==========================================
+build/
+bin/
+obj/
+cmake-build-*/
+CMakeCache.txt
+CMakeFiles/
+
+# ==========================================
+# Konfiguracja środowisk (IDE & Edytory)
+# ==========================================
+# VS Code (zawiera lokalne ścieżki i zadania)
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+
+# CLion / JetBrains
+.idea/
+cmake-build-debug/
+cmake-build-release/
+
+# ==========================================
+# Pliki tymczasowe i systemowe
+# ==========================================
+.DS_Store
+Thumbs.db
+*~
+*.swp
+*.core
