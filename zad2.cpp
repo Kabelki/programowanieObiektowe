@@ -2,20 +2,20 @@
 #include <string>
 #include <vector>
 
-using namespace std;
-string strReverse(string quote);
+
+std::string strReverse(std::string quote);
 
 int main() {
-  string input{};
-  cout << "Type something: ";
+  std::string input{};
+  std::cout << "Type something: ";
   getline(cin, input);
   input = strReverse(input);  
-  cout << input << endl;
+  std::cout << input << std::endl;
 
   return 0;
 }
 
-string strReverse(string quote) {
+std::string strReverse(std::string quote) {
   int qLen = size(quote);
   for (int i = 0; i < qLen / 2; i++) {
     char qBuff = quote[i];
