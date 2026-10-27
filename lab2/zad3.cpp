@@ -2,22 +2,21 @@
 #include <string>
 
 
-using namespace std;
-bool palindrom(string quote);
+bool palindrom(std::string quote);
 
 int main() {
-  string input{};
-  cout << "Type something: ";
-  getline(cin, input);
+  std::string input{};
+  std::cout << "Type something: ";
+  getline(std::cin, input);
   if (palindrom(input) == 1) {
-    cout << "Palindrom" << endl;
+    std::cout << "Palindrom" << std::endl;
     return 0;
   }
   else
     return 1;
 }
 
-bool palindrom(string quote) {
+bool palindrom(std::string quote) {
   int qLen = size(quote);
   int pCounter{};
   for (int i = 0; i < qLen / 2; i++)
