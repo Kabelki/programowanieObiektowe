@@ -8,7 +8,7 @@ std::string strReverse(std::string quote);
 int main() {
   std::string input{};
   std::cout << "Type something: ";
-  getline(cin, input);
+  getline(std::cin, input);
   input = strReverse(input);  
   std::cout << input << std::endl;
 
